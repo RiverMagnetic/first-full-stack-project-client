@@ -15,25 +15,25 @@ const signUpFailure = function (error) {
     console.error('signUpFailure ran. Error is :', error)
 }
 
-// const signInSuccess = function (data) {
-//     $('#message').text("Let's play!")
-//     $('#message').css('background-color', 'green')
-//     // console.log('signInSuccess ran. Data is :', data)
-//     store.user = data.user
-//     $('#logInModal').modal('hide')
-//     $('#sign-in-modal').hide()
-//     $('#sign-up-modal').hide()
-//     $('#game-create').show()
-//     $('#sign-out-modal').show()
-//     $('#change-password-modal').show()
-// }
+const signInSuccess = function (data) {
+    $('#message').text("Let's play!")
+    $('#message').css('background-color', 'green')
+    console.log('signInSuccess ran. Data is :', data)
+    store.user = data.user
+    $('#logInModal').modal('hide')
+    $('#sign-in-modal').hide()
+    $('#sign-up-modal').hide()
+    $('#game-create').show()
+    $('#sign-out-modal').show()
+    $('#change-password-modal').show()
+}
 
-// const signInFailure = function (error) {
-//     $('#logInModal').modal('hide')
-//     $('#message').text('Incorrect Email or Password')
-//     $('#message').css('background-color', 'red')
-//     // console.error('signInFailure ran. Error is :', error)
-// }
+const signInFailure = function (error) {
+    $('#logInModal').modal('hide')
+    $('#message').text('Incorrect Email or Password')
+    $('#message').css('background-color', 'red')
+    console.error('signInFailure ran. Error is :', error)
+}
 
 // const signOutSuccess = function () {
 //     $('#message').text('Signed out')
@@ -71,10 +71,10 @@ const signUpFailure = function (error) {
 
 module.exports = {
     signUpSuccess,
-    signUpFailure
+    signUpFailure,
+    signInSuccess,
+    signInFailure
     // ,
-    // signInSuccess,
-    // signInFailure,
     // signOutSuccess,
     // signOutFailure,
     // changePasswordSuccess,
