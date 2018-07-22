@@ -29,4 +29,4 @@ I like to set personal deadlines that would be a stretch to meet to keep myself 
 
 I began with my API. After getting most of the API items on my schedule done, I added HTML some rough CSS, and Javascript (including JQuery and AJAX) in order to add authentication features, one at a time.
 
-When I ran into my one problem, I was proactive, posting an issue in the issue queue, and asking questions of fellow students. 
+When I ran into my one problem, I proactively posted an issue in the issue queue. 
