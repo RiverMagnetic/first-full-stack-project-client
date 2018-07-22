@@ -55,28 +55,27 @@ const signInFailure = function (error) {
 //     // console.error('signOutFailure ran. Error is :', error)
 // }
 
-// const changePasswordSuccess = function () {
-//     $('#message').text('Changed password successfully')
-//     $('#message').css('background-color', 'green')
-//     // console.log('changePasswordSuccess ran and nothing was returned!')
-//     $('#changePasswordModal').hide()
-// }
+const changePasswordSuccess = function () {
+    $('#message').text('Changed password successfully')
+    $('#message').css('background-color', 'green')
+    console.log('changePasswordSuccess ran and nothing was returned!')
+    $('#changePasswordModal').hide()
+}
 
-// const changePasswordFailure = function (error) {
-//     $('#message').text('Incorrect old or new password')
-//     $('#message').css('background-color', 'red')
-//     // console.error('changePasswordFailure ran. Error is :', error)
+const changePasswordFailure = function (error) {
+    $('#message').text('Incorrect old or new password')
+    $('#message').css('background-color', 'red')
+    console.error('changePasswordFailure ran. Error is :', error)
 
-// }
+}
 
 module.exports = {
     signUpSuccess,
     signUpFailure,
     signInSuccess,
-    signInFailure
-    // ,
+    signInFailure,
     // signOutSuccess,
     // signOutFailure,
-    // changePasswordSuccess,
-    // changePasswordFailure
+    changePasswordSuccess,
+    changePasswordFailure
 }

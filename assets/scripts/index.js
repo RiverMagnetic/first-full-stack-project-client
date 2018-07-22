@@ -10,7 +10,7 @@ const authEvents = require('./auth/authEvents')
 $(() => {
 
   // $('#game-board').hide()
-  // $('#change-password-modal').hide()
+  $('#change-password-modal').hide()
   // $('#sign-out-modal').hide()
   // $('#game-create').hide()
 
@@ -31,5 +31,5 @@ $(() => {
   authEvents.addHandlers()
   // gameEvents.addHandlers()
   $('#sign-up').on('submit', authEvents.openModal)
-  // $('#change-password').on('submit', authEvents.openModal)
+  $('#change-password').on('submit', authEvents.openModal)
 })

@@ -13,7 +13,7 @@ const openModal = function (event) {
     // console.log(data.form)
     $('#signUpModal').modal('hide')
     $('#logInModal').modal('hide')
-    // $('#changePasswordModal').modal('hide')
+    $('#changePasswordModal').modal('hide')
 }
 const onSignUp = function (event) {
     event.preventDefault()
@@ -41,21 +41,21 @@ const onSignIn = function (event) {
 //         .catch(authUi.signOutFailure)
 // }
 
-// const onChangePassword = function (event) {
-//     event.preventDefault()
-//     // console.log('change password ran!')
+const onChangePassword = function (event) {
+    event.preventDefault()
+    // console.log('change password ran!')
 
-//     const data = getFormFields(this)
-//     authApi.changePassword(data)
-//         .then(authUi.changePasswordSuccess)
-//         .catch(authUi.changePasswordFailure)
-// }
+    const data = getFormFields(this)
+    authApi.changePassword(data)
+        .then(authUi.changePasswordSuccess)
+        .catch(authUi.changePasswordFailure)
+}
 
 const addHandlers = () => {
     $('#sign-up').on('submit', onSignUp)
     $('#sign-in').on('submit', onSignIn)
     // $('#sign-out').on('submit', onSignOut)
-    // $('#change-password').on('submit', onChangePassword)
+    $('#change-password').on('submit', onChangePassword)
 }
 
 module.exports = {
