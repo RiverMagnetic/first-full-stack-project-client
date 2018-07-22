@@ -11,7 +11,7 @@ $(() => {
 
   // $('#game-board').hide()
   $('#change-password-modal').hide()
-  // $('#sign-out-modal').hide()
+  $('#sign-out-modal').hide()
   // $('#game-create').hide()
 
   // function to hold event handlers

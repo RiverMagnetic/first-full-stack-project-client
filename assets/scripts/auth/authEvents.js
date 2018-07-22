@@ -33,13 +33,13 @@ const onSignIn = function (event) {
         .catch(authUi.signInFailure)
 }
 
-// const onSignOut = function (event) {
-//     event.preventDefault()
-//     // console.log('sign out ran')
-//     authApi.signOut()
-//         .then(authUi.signOutSuccess)
-//         .catch(authUi.signOutFailure)
-// }
+const onSignOut = function (event) {
+    event.preventDefault()
+    // console.log('sign out ran')
+    authApi.signOut()
+        .then(authUi.signOutSuccess)
+        .catch(authUi.signOutFailure)
+}
 
 const onChangePassword = function (event) {
     event.preventDefault()
@@ -54,7 +54,7 @@ const onChangePassword = function (event) {
 const addHandlers = () => {
     $('#sign-up').on('submit', onSignUp)
     $('#sign-in').on('submit', onSignIn)
-    // $('#sign-out').on('submit', onSignOut)
+    $('#sign-out').on('submit', onSignOut)
     $('#change-password').on('submit', onChangePassword)
 }
 
