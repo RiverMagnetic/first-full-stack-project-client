@@ -49,7 +49,7 @@ const onSignUp = function (event) {
 //     authApi.changePassword(data)
 //         .then(authUi.changePasswordSuccess)
 //         .catch(authUi.changePasswordFailure)
-}
+// }
 
 const addHandlers = () => {
     $('#sign-up').on('submit', onSignUp)
