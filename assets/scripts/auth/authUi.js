@@ -16,14 +16,14 @@ const signUpFailure = function (error) {
 }
 
 const signInSuccess = function (data) {
-    // $('#message').text("Let's play!")
+    $('#message').text("Check out my list!")
     $('#message').css('background-color', 'green')
     // console.log('signInSuccess ran. Data is :', data)
     store.user = data.user
     $('#logInModal').modal('hide')
     $('#sign-in-modal').hide()
     $('#sign-up-modal').hide()
-    // $('#game-create').show()
+    $('#list-view').show()
     $('#sign-out-modal').show()
     $('#change-password-modal').show()
 }
@@ -43,7 +43,7 @@ const signOutSuccess = function () {
     $('#sign-in-modal').show()
     $('#sign-up-modal').show()
 //     $('#game-board').hide()
-//     $('#game-create').hide()
+    $('#list-view').hide()
     $('#sign-out-modal').hide()
     $('#change-password-modal').hide()
     $('#signOutModal').modal('hide')

@@ -12,21 +12,21 @@ $(() => {
   // $('#game-board').hide()
   $('#change-password-modal').hide()
   $('#sign-out-modal').hide()
-  // $('#game-create').hide()
+  $('#list-view').hide()
 
   // function to hold event handlers
-  // const addHandlers = () => {
+  const addHandlers = () => {
   //   $('.cell').on('click', function (event) {
   //     event.preventDefault()
   //     game.mark(event.target.id)
   //   })
-  //   $('#game-create').on('submit', function (event) {
-  //     event.preventDefault()
-  //     game.createGame(event)
-  //   })
-  // }
+    $('#list-view').on('submit', function (event) {
+      event.preventDefault()
+      // game.createGame(event)
+    })
+  }
   // call the addHandlers function that was just defined
-  // addHandlers()
+  addHandlers()
 
   authEvents.addHandlers()
   // gameEvents.addHandlers()
