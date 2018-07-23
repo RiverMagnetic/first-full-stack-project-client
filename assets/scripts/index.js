@@ -2,7 +2,7 @@
 
 // const game = require('./game')
 const authEvents = require('./auth/authEvents')
-// const gameEvents = require('./game/gameEvents')
+const itemEvents = require('./item/itemEvents')
 
 
 
@@ -29,7 +29,7 @@ $(() => {
   addHandlers()
 
   authEvents.addHandlers()
-  // gameEvents.addHandlers()
+  itemEvents.addHandlers()
   $('#sign-up').on('submit', authEvents.openModal)
   $('#change-password').on('submit', authEvents.openModal)
 })

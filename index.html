@@ -23,30 +23,7 @@
         <button id="sign-in-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#logInModal">Sign In</button>
         <button id="sign-up-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUpModal">Create Account</button>
       </form>
-      <!-- <button type="submit" id="login-path-button" class="btn btn-default">Sign In</button>
-      <button type="submit" id="create-account-path-button" class="btn btn-default">Create an Account</button> -->
-      <!-- sign up view -->
-      <!-- <form class="accounts" id="create-account">
-        <h2>Create An Account</h2>
-        <div>
-          <input name="credentials[email]" type="text" placeholder="Email">
-          <input name="credentials[password]" type="password" placeholder="Password">
-          <input name="credentials[password_confirmation]" type="password" placeholder="Confirm Password">
-        </div>
-        <button type="submit" id="create-account-button" class="btn btn-default">Create New Account</button>
-      </form> -->
-    
-      <!-- login view -->
-      <!-- <form class="accounts" id="account-login">
-        <h2>Log In</h2>
-        <div>
-          <input type="text" name="credentials[email]" placeholder="Email">
-          <input type="password" name="credentials[password]" placeholder="Password">
-        </div>
-      </form> -->
-    
-      <!-- game board view -->
-      <!-- <div> -->
+
         <!-- JQuery will insert messaging relating to the list and forms into this h3 tag -->
       <h3 id="message"></h3>
     
@@ -58,13 +35,30 @@
       </form> -->
 
   
-      <form id="list-view" class="border">
+      <div id="list-view" class="border">
         <h3>Take a look</h3>
-        <button id="getListButton" class="btn btn-default">View</button>
+        <button id="getItemsButton" class="btn btn-default">View</button>
         <button id="clearListButton" class="btn btn-default">Clear List!</button>
-        <div class="container" id="list"></div>
-      </form>
+        <div id="content" class="content">
+      </div>
       
+      <!-- For future iterations where I want the user to be able to input multiple rows of text, do something like this: -->
+      <!-- <div id="buildProposal">
+        <form id="build-proposal" class="border">
+          <fieldset>
+            <legend>Build Proposal</legend>
+            <input type="text" name="Project_title" placeholder="Project Title">
+            <br>
+            <textarea form="build-proposal" name="question_one" rows="5" placeholder="Question One"></textarea>
+            <br>
+            <textarea form="build-proposal" name="question_two" rows="5" placeholder="Question Two"></textarea>
+            <br>
+            <textarea form="build-proposal" name="question_three" rows="5" placeholder="Question Three"></textarea>
+            <br>
+            <input type="submit" value="Submit Proposal">
+          </fieldset>
+        </form>
+      </div> -->
       <!--
     <form id="game-index" class="border">
       <fieldset>
@@ -116,10 +110,6 @@
             <div class="modal-body">
               <form class="accounts" id="sign-up">
                 <div class="form-group">
-                  <!-- Maria's code to troubleshoot with if my following 3 inputs don't work:
-                <label for="name">Create Account</label>
-                <input type="text" class="form-control" name="form" id="name" placeholder="name">
-                <input type="password" class="form-control" name="form" id="password" placeholder="password"> -->
                   <input type="text" class="form-control" name="credentials[email]" placeholder="Email">
                   <input type="password" class="form-control" name="credentials[password]" placeholder="Password">
                   <input type="password" class="form-control" name="credentials[password_confirmation]" placeholder="Confirm Password">
@@ -159,15 +149,6 @@
         </div>
       </div>
       <!-- Log In Modal Ends -->
-    
-      <!-- <form id="change-password" class="border">
-          <fieldset>
-            <legend>Change Password!</legend>
-            <input type="password" name="passwords[old]" placeholder="Old Password">
-            <input type="password" name="passwords[new]" placeholder="New Password">
-            <input type="submit" value="Change Password!">
-          </fieldset>
-        </form> -->
     
       <!-- Change Password Modal Begins -->
       <div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
