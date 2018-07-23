@@ -2,24 +2,15 @@
 
 <!-- Developers, why are we using data-id and not just id? -->
 <h1 data-id="{{item.id}}">
-    <small>Title: {{item.title}}</small>
+    <small>Item: {{item.item_name}}</small>
 </h1>
 
 <ul data-id="{{item.id}}">
-    <li>{{#if item.author}} {{item.author}} {{else}} No author provided, bruh {{/if}}
+    <li>{{#if item.description}} {{item.description}} {{else}} No description provided {{/if}}
     </li>
     <li>
         <button type="submit">X</button>
     </li>
 </ul>
-
-
-<!-- <div>
-    {{#if item.author}}
-      {{item.author}}
-    {{else}}
-      No author provided.
-    {{/if}}
-  </div> -->
 
 {{/each}}
