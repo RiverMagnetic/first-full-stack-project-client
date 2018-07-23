@@ -1,11 +1,11 @@
 'use strict'
 
-const api = require('./itemApi.js')
+const itemApi = require('./itemApi.js')
 const itemUi = require('./itemUi.js')
 
 const onGetItems = (event) => {
     event.preventDefault()
-    api.getItems()
+    itemApi.getItems()
         .then(itemUi.getItemsSuccess)
         .catch(itemUi.failure)
 }
@@ -18,7 +18,7 @@ const onClearItems = (event) => {
 const onDeleteItem = (event) => {
     event.preventDefault()
     const itemId = $(event.target).closest('ul').attr('data-id')
-    api.deleteItem(itemId)
+    itemApi.deleteItem(itemId)
         // may need refactoring
         .then(() => onGetItems(event))
         .catch(itemUi.failure)
