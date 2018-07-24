@@ -12,30 +12,15 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body class="container-fluid">
-    
-      <!-- frame -->
       <header>
         <h1>My List</h1>
       </header>
-    
-      <!-- homepage view -->
       <form class="homepage">
         <button id="sign-in-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#logInModal">Sign In</button>
         <button id="sign-up-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUpModal">Create Account</button>
       </form>
-
-        <!-- JQuery will insert messaging relating to the list and forms into this h3 tag -->
       <h3 id="message"></h3>
-    
-    
-        <!-- the list -->
-      <!-- <form id="list-view" class="border">
-        <fieldset>
-        </fieldset>
-      </form> -->
-
-  
-      <div id="list-view" class="border">
+      <div id="items-view" class="border">
         <h3>Take a look</h3>
         <button id="getItemsButton" class="btn btn-default">View</button>
         <button id="clearListButton" class="btn btn-default">Clear List!</button>
@@ -83,19 +68,11 @@
         <input type="submit" value="Quit">
       </fieldset>
     </form> -->
+
       <form>
         <button id="change-password-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#changePasswordModal">Change Password</button>
         <button id="sign-out-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#signOutModal">Sign Out</button>
       </form>
-    
-      <!-- <form id="game-update" class="border">
-      <fieldset>
-        <legend>Update One Example</legend>
-        <input type="text" name="example[id]" placeholder="Enter Example ID">
-        <input type="text" name="example[text]" placeholder="Enter Example Text">
-        <input type="submit" value="Update Example">
-      </fieldset>
-    </form> -->
     
       <!-- Sign Up Modal Begins -->
       <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
