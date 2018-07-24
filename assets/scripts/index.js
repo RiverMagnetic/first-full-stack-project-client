@@ -14,7 +14,7 @@ $(() => {
   
   // function to hold event handlers
   const addHandlers = () => {
-    $('#list-view').on('submit', function (event) {
+    $('#items-view').on('submit', function (event) {
       event.preventDefault()
     })
   }
