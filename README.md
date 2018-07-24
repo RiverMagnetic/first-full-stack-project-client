@@ -1,6 +1,6 @@
 ## Project Idea
 
-My first-full-stack-project idea is simple. It's a list app.
+My first full stack project idea is simple. It's a list app.
 
 I love lists. I'm really excited about learning through my idea's simplicity, and the infinite possibilities for building upon it.
 
