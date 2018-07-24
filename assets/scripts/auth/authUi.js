@@ -23,7 +23,7 @@ const signInSuccess = function (data) {
     $('#logInModal').modal('hide')
     $('#sign-in-modal').hide()
     $('#sign-up-modal').hide()
-    $('#list-view').show()
+    $('#items-view').show()
     $('#sign-out-modal').show()
     $('#change-password-modal').show()
 }
@@ -43,7 +43,7 @@ const signOutSuccess = function () {
     $('#sign-in-modal').show()
     $('#sign-up-modal').show()
 //     $('#game-board').hide()
-    $('#list-view').hide()
+    $('#items-view').hide()
     $('#sign-out-modal').hide()
     $('#change-password-modal').hide()
     $('#signOutModal').modal('hide')
