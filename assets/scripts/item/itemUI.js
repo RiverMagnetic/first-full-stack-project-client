@@ -15,9 +15,14 @@ const clearItems = () => {
     $('.content').empty()
 }
 
-// This success function is for any successes, not tied to specific requests
-const onSuccess = function (response) {
-    console.log('successful response is', response)
+const onCreateItemSuccess = function () {
+    $('#message').text(`Item added!`)
+    $('#message').css('background-color', 'green')
+}
+
+const onDeleteItemSuccess = function () {
+    $('#message').text(`Item deleted!`)
+    $('#message').css('background-color', 'green')
 }
 
 // This failure function is for any errors, not tied to specific requests
@@ -26,8 +31,10 @@ const onError = function (error) {
 }
 
 module.exports = {
+    onCreateItemSuccess,
     getItemsSuccess,
     clearItems,
-    onSuccess,
+    onDeleteItemSuccess,
+    // onSuccess,
     onError
 }
