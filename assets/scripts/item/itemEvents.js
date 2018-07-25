@@ -33,10 +33,6 @@ const onCreateItem = function (event) {
     itemApi.createItem(data)
         .then(itemUi.onSuccess)
         .fail(itemUi.onError)
-
-    // handle successfull response
-
-    // handle failure
 }
 const addHandlers = () => {
     $('#getItemsButton').on('click', onGetItems)
