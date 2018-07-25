@@ -3,7 +3,7 @@
 let apiUrl
 const apiUrls = {
   // TODO: add production URL
-  production: '<replace-with-heroku-url>',
+  production: 'https://api-list-project.herokuapp.com',
   development: 'http://localhost:4741'
 }
 
