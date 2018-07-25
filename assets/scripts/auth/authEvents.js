@@ -8,7 +8,7 @@ const authUi = require('./authUi')
 
 const openModal = function (event) {
     event.preventDefault()
-    const data = getFormFields(event.target)
+    // const data = getFormFields(event.target)
     // console.log(data)
     // console.log(data.form)
     $('#signUpModal').modal('hide')
