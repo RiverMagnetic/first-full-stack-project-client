@@ -12,7 +12,10 @@ const getItems = function () {
 const deleteItem = (itemId) => {
     return $.ajax({
         url: config.apiUrl + '/items/' + itemId,
-        method: 'DELETE'
+        method: 'DELETE',
+        headers: {
+            Authorization: 'Token token=' + store.user.token
+        },
     })
 }
 
