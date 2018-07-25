@@ -38,7 +38,9 @@ const addHandlers = () => {
     $('#getItemsButton').on('click', onGetItems)
     $('#clearItemsButton').on('click', onClearItems)
     $('.content').on('click', 'button', onDeleteItem)
+    $('#create-item').on('submit', onClearItems)
     $('#create-item').on('submit', onCreateItem)
+
 }
 
 module.exports = {
