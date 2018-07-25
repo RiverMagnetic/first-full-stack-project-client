@@ -1,4 +1,7 @@
 'use strict'
+
+// const store = require('../store')
+
 // this line connects my js to my handlebars
 const showItemsTemplate = require('../templates/item-listing.handlebars')
 
