@@ -11,13 +11,20 @@ const getItemsSuccess = (data) => {
 const clearItems = () => {
     $('.content').empty()
 }
+
+// This success function is for any successes, not tied to specific requests
+const onSuccess = function (response) {
+    console.log('successful response is', response)
+}
+
 // This failure function is for any errors, not tied to specific requests
-const failure = (error) => {
-    console.error(error)
+const onError = function (error) {
+    console.error('error is ', error)
 }
 
 module.exports = {
     getItemsSuccess,
     clearItems,
-    failure
+    onSuccess,
+    onError
 }

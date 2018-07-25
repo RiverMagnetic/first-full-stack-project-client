@@ -1,6 +1,7 @@
 'use strict'
 
 const config = require('../config')
+const store = require('../store')
 
 const getItems = function () {
     return $.ajax({
@@ -15,7 +16,17 @@ const deleteItem = (itemId) => {
     })
 }
 
+const createItem = function (data) {
+    return $.ajax({
+        url: config.apiUrl + '/items',
+        method: 'POST',
+        headers: 'Token token = ' + store.user.token,
+        data
+    })
+}
+
 module.exports = {
     getItems,
-    deleteItem
+    deleteItem,
+    createItem
 }

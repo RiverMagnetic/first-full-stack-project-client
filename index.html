@@ -15,17 +15,33 @@
       <header>
         <h1>My List</h1>
       </header>
+
       <form class="homepage">
         <button id="sign-in-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#logInModal">Sign In</button>
         <button id="sign-up-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUpModal">Create Account</button>
       </form>
+
       <h3 id="message"></h3>
+
+      <form>
+        <button id="change-password-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#changePasswordModal">Change Password</button>
+        <button id="sign-out-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#signOutModal">Sign Out</button>
+      </form>
+
       <div id="items-view" class="border">
         <h3>Take a look</h3>
         <button id="getItemsButton" class="btn btn-default">View</button>
         <button id="clearListButton" class="btn btn-default">Clear List!</button>
         <div id="content" class="content"></div>
       </div>
+      <h2> Add an Item </h2>
+      <form id='create-item'>
+        <label>Item Name</label>
+        <input type='text' name='item[text]'>
+        <label>Description</label>
+        <input type='text' name='item[text]'>
+        <button type='submit'> Submit </button>
+      </form>
       
       <!-- For future iterations where I want the user to be able to input multiple rows of text, do something like this: -->
       <!-- <div id="buildProposal">
@@ -69,10 +85,7 @@
       </fieldset>
     </form> -->
 
-      <form>
-        <button id="change-password-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#changePasswordModal">Change Password</button>
-        <button id="sign-out-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#signOutModal">Sign Out</button>
-      </form>
+
     
       <!-- Sign Up Modal Begins -->
       <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -173,6 +186,4 @@
       </div>
       <!-- Sign Out Modal Ends -->
     </body>
-    
-    </html>
 </html>
