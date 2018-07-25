@@ -2,6 +2,7 @@ const getFormFields = require('../../../lib/get-form-fields')
 
 const authApi = require('./authApi')
 const authUi = require('./authUi')
+const itemUi = require('../item/itemUi')
 // Using your knowledge of jQuery write a function, 
 // onSubmitForm or openModal, that console logs the input in the input field when "save changes" is clicked
 // this will be referenced in index.js
@@ -38,6 +39,7 @@ const onSignOut = function (event) {
     // console.log('sign out ran')
     authApi.signOut()
         .then(authUi.signOutSuccess)
+        .then(itemUi.clearItems)
         .catch(authUi.signOutFailure)
 }
 
