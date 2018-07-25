@@ -17,10 +17,14 @@ const deleteItem = (itemId) => {
 }
 
 const createItem = function (data) {
+    console.log(data)
+    console.log(store.user.token)
     return $.ajax({
         url: config.apiUrl + '/items',
         method: 'POST',
-        headers: 'Token token = ' + store.user.token,
+        headers: {
+            Authorization: 'Token token=' + store.user.token
+        },
         data
     })
 }
