@@ -21,6 +21,8 @@ const onDeleteItem = (event) => {
     const itemId = $(event.target).closest('ul').attr('data-id')
     itemApi.deleteItem(itemId)
         // may need refactoring
+        .then(itemUi.onDeleteItemSuccess)
+        .then(() => onClearItems(event))
         .then(() => onGetItems(event))
         .catch(itemUi.onError)
 }
@@ -31,16 +33,17 @@ const onCreateItem = function (event) {
     console.log(data)
     // API call
     itemApi.createItem(data)
-        .then(itemUi.onSuccess)
+        .then(() => onClearItems(event))
+        .then(() => onGetItems(event))
+        .then(itemUi.onCreateItemSuccess)
         .fail(itemUi.onError)
+    
 }
 const addHandlers = () => {
     $('#getItemsButton').on('click', onGetItems)
     $('#clearItemsButton').on('click', onClearItems)
     $('.content').on('click', 'button', onDeleteItem)
-    $('#create-item').on('submit', onClearItems)
     $('#create-item').on('submit', onCreateItem)
-
 }
 
 module.exports = {
