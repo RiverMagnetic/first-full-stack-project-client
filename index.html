@@ -33,6 +33,18 @@
         <button id="getItemsButton" class="btn btn-default">View</button>
         <button id="clearItemsButton" class="btn btn-default">Clear List!</button>
         <div id="content" class="content"></div>
+        <h2>Update an item</h2>
+        <form id="item-update">
+          <div class="form-group">
+            <input type="text" name="item[id]" placeholder="Item ID Here">
+            <br>
+            <input type="text" name="item[item_name]" placeholder="Item Name">
+            <br>
+            <input type="text" name="item[description]" placeholder="Description">
+            <br>
+          </div>
+          <button type="submit" class="btn btn-default">Update Item</button>
+        </form>
         <h2> Add an Item </h2>
         <form id='create-item'>
           <label>Item Name</label>
