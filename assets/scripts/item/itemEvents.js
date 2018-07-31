@@ -30,13 +30,16 @@ const onDeleteItem = (event) => {
 const onUpdateItem = function (event) {
     event.preventDefault()
     const data = getFormFields(event.target)
+    console.log('running onUpdateItem')
     const item = data.item
+    console.log(item)
     if (item.id === '') {
         $('#message').html('Id is required')
         $('#message').css('background - color', 'red')
         return false
     }
     if (item.id.length !== 0) {
+        console.log(item.id.length)
         itemApi.updateItem(data)
             .then(itemUi.onUpdateSuccess)
             .catch(itemUi.onError)
@@ -63,7 +66,7 @@ const addHandlers = () => {
     $('#clearItemsButton').on('click', onClearItems)
     $('.content').on('click', 'button', onDeleteItem)
     $('#create-item').on('submit', onCreateItem)
-    $('#update-item').on('click', onUpdateItem)
+    $('#update-item').on('submit', onUpdateItem)
 }
 
 module.exports = {
