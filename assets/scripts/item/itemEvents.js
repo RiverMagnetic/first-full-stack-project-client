@@ -29,22 +29,27 @@ const onDeleteItem = (event) => {
 
 const onUpdateItem = function (event) {
     event.preventDefault()
-    const data = getFormFields(event.target)
     console.log('running onUpdateItem')
+
+    const data = getFormFields(event.target)
     const item = data.item
+
     console.log(item)
-    if (item.id === '') {
-        $('#message').html('Id is required')
-        $('#message').css('background - color', 'red')
-        return false
-    }
+    // if (item.id === '') {
+    //     $('#message').html('Id is required')
+    //     $('#message').css('background - color', 'red')
+    //     return false
+    // }
     if (item.id.length !== 0) {
-        console.log(item.id.length)
+        // console.log(item.id.length)
+        // console.log(data)
         itemApi.updateItem(data)
-            .then(itemUi.onUpdateSuccess)
+            .then(itemUi.onUpdateItemSuccess)
             .catch(itemUi.onError)
     } else {
-        console.log('Please provide a item id!')
+        $('#message').html('Please provide an item id!')
+        $('#message').css('background-color', 'red')
+        console.log('Please provide an item id!')
     }
 }
 
