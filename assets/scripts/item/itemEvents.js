@@ -26,6 +26,25 @@ const onDeleteItem = (event) => {
         .then(() => onGetItems(event))
         .catch(itemUi.onError)
 }
+
+const onUpdateItem = function (event) {
+    event.preventDefault()
+    const data = getFormFields(event.target)
+    const item = data.item
+    if (item.id === '') {
+        $('#message').html('Id is required')
+        $('#message').css('background - color', 'red')
+        return false
+    }
+    if (item.id.length !== 0) {
+        itemApi.updateItem(data)
+            .then(itemUi.onUpdateSuccess)
+            .catch(itemUi.onError)
+    } else {
+        console.log('Please provide a item id!')
+    }
+}
+
 const onCreateItem = function (event) {
     event.preventDefault()
     console.log('got to onCreateItem!')
@@ -44,6 +63,7 @@ const addHandlers = () => {
     $('#clearItemsButton').on('click', onClearItems)
     $('.content').on('click', 'button', onDeleteItem)
     $('#create-item').on('submit', onCreateItem)
+    $('#update-item').on('click', onUpdateItem)
 }
 
 module.exports = {
