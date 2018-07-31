@@ -25,6 +25,11 @@ const onDeleteItemSuccess = function () {
     $('#message').css('background-color', 'green')
 }
 
+const onUpdateItemSuccess = function () {
+    $('#message').text(`Item updated!`)
+    $('#message').css('background-color', 'green')
+}
+
 // This failure function is for any errors, not tied to specific requests
 const onError = function (error) {
     console.error('error is ', error)
@@ -35,6 +40,6 @@ module.exports = {
     getItemsSuccess,
     clearItems,
     onDeleteItemSuccess,
-    // onSuccess,
+    onUpdateItemSuccess,
     onError
 }
