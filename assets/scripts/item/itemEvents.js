@@ -6,7 +6,8 @@ const itemUi = require('./itemUi.js')
 
 const onGetItems = (event) => {
     event.preventDefault()
-    itemApi.getItems()
+    Promise.resolve(itemUi.clearItems)
+        .then(itemApi.getItems)
         .then(itemUi.getItemsSuccess)
         .catch(itemUi.onError)
 }
@@ -45,12 +46,15 @@ const onUpdateItem = function (event) {
         // console.log(data)
         itemApi.updateItem(data)
             .then(itemUi.onUpdateItemSuccess)
+            .then(() => onClearItems(event))
+            .then(() => onGetItems(event))
             .catch(itemUi.onError)
     } else {
         $('#message').html('Please provide an item id!')
         $('#message').css('background-color', 'red')
         console.log('Please provide an item id!')
     }
+    
 }
 
 const onCreateItem = function (event) {
