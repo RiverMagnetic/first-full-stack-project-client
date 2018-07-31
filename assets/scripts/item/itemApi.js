@@ -20,6 +20,9 @@ const deleteItem = (itemId) => {
 }
 
 const updateItem = function (data) {
+    console.log(data)
+    console.log(data.item.id)
+    console.log(store.user.token)
     return $.ajax({
         url: config.apiUrl + '/items/' + data.item.id,
         method: 'PATCH',
