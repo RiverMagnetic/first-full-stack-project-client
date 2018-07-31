@@ -5,7 +5,10 @@ const store = require('../store')
 
 const getItems = function () {
     return $.ajax({
-        url: config.apiUrl + '/items'
+        url: config.apiUrl + '/items',
+        headers: {
+            Authorization: 'Token token=' + store.user.token
+        },
     })
 }
 
@@ -27,7 +30,7 @@ const updateItem = function (data) {
         url: config.apiUrl + '/items/' + data.item.id,
         method: 'PATCH',
         headers: {
-            Authorization: 'Token token =' + store.user.token
+            Authorization: 'Token token=' + store.user.token
         },
         data
     })
