@@ -35,7 +35,7 @@ const onDeleteItemSuccess = function () {
 const onUpdateItemSuccess = function () {
     $('#message').text(`Item updated!`)
     $('#message').css('background-color', 'green')
-    $('#update-item').trigger('reset')
+    
 }
 
 // This failure function is for any errors, not tied to specific requests
