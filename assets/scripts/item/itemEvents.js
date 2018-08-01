@@ -54,7 +54,8 @@ const onUpdateItem = function (event) {
         $('#message').css('background-color', 'red')
         console.log('Please provide an item id!')
     }
-    
+    $('#update-item').trigger('reset')
+    //  the native way to do this would be: document.querySelector('#update-item').reset()
 }
 
 const onCreateItem = function (event) {
@@ -68,7 +69,7 @@ const onCreateItem = function (event) {
         .then(() => onGetItems(event))
         .then(itemUi.onCreateItemSuccess)
         .fail(itemUi.onError)
-    
+    $('#create-item').trigger('reset')
 }
 const addHandlers = () => {
     $('#getItemsButton').on('click', onGetItems)
