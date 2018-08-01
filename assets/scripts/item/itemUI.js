@@ -16,15 +16,9 @@ const clearItems = () => {
     $('.content').empty()
 }
 
-// const resetForm = () => {
-//     $('#update-item').trigger('reset')
-//     //  the native way to do this would be: document.querySelector('#update-item').reset()
-// }
-
 const onCreateItemSuccess = function () {
     $('#message').text(`Item added!`)
     $('#message').css('background-color', 'green')
-    $('#create-item').trigger('reset')
 }
 
 const onDeleteItemSuccess = function () {
