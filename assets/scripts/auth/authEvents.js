@@ -23,6 +23,7 @@ const onSignUp = function (event) {
     authApi.signUp(data)
         .then(authUi.signUpSuccess)
         .catch(authUi.signUpFailure)
+    $('#sign-up').trigger('reset')
 }
 
 const onSignIn = function (event) {
@@ -32,6 +33,7 @@ const onSignIn = function (event) {
     authApi.signIn(data)
         .then(authUi.signInSuccess)
         .catch(authUi.signInFailure)
+    $('#sign-in').trigger('reset')
 }
 
 const onSignOut = function (event) {
@@ -51,6 +53,7 @@ const onChangePassword = function (event) {
     authApi.changePassword(data)
         .then(authUi.changePasswordSuccess)
         .catch(authUi.changePasswordFailure)
+    
 }
 
 const addHandlers = () => {
