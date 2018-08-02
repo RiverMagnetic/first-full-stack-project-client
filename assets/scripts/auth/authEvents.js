@@ -53,7 +53,7 @@ const onChangePassword = function (event) {
     authApi.changePassword(data)
         .then(authUi.changePasswordSuccess)
         .catch(authUi.changePasswordFailure)
-    
+    $('#change-password').trigger('reset')
 }
 
 const addHandlers = () => {
