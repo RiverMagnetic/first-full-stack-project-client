@@ -28,4 +28,10 @@ I like to set personal deadlines that would be a stretch to meet to keep myself 
 
 I began with my API. After getting most of the API items on my schedule done, I added HTML some rough CSS, and Javascript (including JQuery and AJAX) in order to add authentication features, one at a time.
 
-When I ran into my one problem, I proactively posted an issue in the issue queue. 
+When I ran into problems, I proactively posted issues in the issue queue. 
+
+## Problems I Plan to Solve in Future Iterations
+
+1. Currently when the View List button is clicked, the response is tacked on to the list that is already displayed. I want to clear the contents before returning the list so that that doesn't happen. 
+2. I also want to make my UI more intuitive, both in terms of where buttons are found, and messages are displayed. 
+3. In general I want to work on my stying. The first part I plan to work on is how the items in the list.
