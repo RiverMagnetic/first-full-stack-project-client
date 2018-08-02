@@ -2,17 +2,15 @@
 
 const store = require('../store')
 
-const signUpSuccess = function (data) {
+const signUpSuccess = function () {
     $('#message').text('Signed up successfully')
     $('#message').css('background-color', 'green')
-    // console.log('signUpSuccess ran. Data is :', data)
     $('#sign-up-modal').hide()
 }
 
-const signUpFailure = function (error) {
+const signUpFailure = function () {
     $('#message').text('Incorrect email or password')
     $('#message').css('background-color', 'red')
-    // console.error('signUpFailure ran. Error is :', error)
 }
 
 const signInSuccess = function (data) {
@@ -28,11 +26,10 @@ const signInSuccess = function (data) {
     $('#change-password-modal').show()
 }
 
-const signInFailure = function (error) {
+const signInFailure = function () {
     $('#logInModal').modal('hide')
     $('#message').text('Incorrect Email or Password')
     $('#message').css('background-color', 'red')
-    // console.error('signInFailure ran. Error is :', error)
 }
 
 const signOutSuccess = function () {
@@ -42,17 +39,15 @@ const signOutSuccess = function () {
     store.user = null
     $('#sign-in-modal').show()
     $('#sign-up-modal').show()
-//     $('#game-board').hide()
     $('#items-view').hide()
     $('#sign-out-modal').hide()
     $('#change-password-modal').hide()
     $('#signOutModal').modal('hide')
 }
 
-const signOutFailure = function (error) {
+const signOutFailure = function () {
     $('#message').text('Error on sign out')
     $('#message').css('background-color', 'red')
-    // console.error('signOutFailure ran. Error is :', error)
 }
 
 const changePasswordSuccess = function () {
@@ -62,11 +57,9 @@ const changePasswordSuccess = function () {
     $('#changePasswordModal').hide()
 }
 
-const changePasswordFailure = function (error) {
+const changePasswordFailure = function () {
     $('#message').text('Incorrect old or new password')
     $('#message').css('background-color', 'red')
-    // console.error('changePasswordFailure ran. Error is :', error)
-
 }
 
 module.exports = {
