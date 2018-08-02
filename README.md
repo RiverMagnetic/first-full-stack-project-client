@@ -34,4 +34,4 @@ When I ran into problems, I proactively posted issues in the issue queue.
 
 1. Currently when the View List button is clicked, the response is tacked on to the list that is already displayed. I want to clear the contents before returning the list so that that doesn't happen. 
 2. I also want to make my UI more intuitive, both in terms of where buttons are found, and messages are displayed. 
-3. In general I want to work on my stying. The first part I plan to work on is how the items in the list.
+3. In general I want to work on my styling. The first part I plan to work on is how the items in the list.
