@@ -44,7 +44,7 @@ const onUpdateItem = function (event) {
     } else {
         $('#message').html('Please provide an item id!')
         $('#message').css('background-color', 'red')
-        console.log('Please provide an item id!')
+        // console.log('Please provide an item id!')
     }
     $('#update-item').trigger('reset')
     //  the native way to do this would be: document.querySelector('#update-item').reset()
@@ -52,9 +52,9 @@ const onUpdateItem = function (event) {
 
 const onCreateItem = function (event) {
     event.preventDefault()
-    console.log('got to onCreateItem!')
+    // console.log('got to onCreateItem!')
     const data = getFormFields(event.target)
-    console.log(data)
+    // console.log(data)
     // API call
     itemApi.createItem(data)
         .then(() => onClearItems(event))
