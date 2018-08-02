@@ -1,12 +1,14 @@
 {{#each items as |item|}} {{log item}}
 
 <h1 data-id="{{item.id}}">
-    <small>Item: {{item.item_name}}</small>
+    <small>{{item.item_name}}</small>
 </h1>
 
 <ul data-id="{{item.id}}">
-    <li>{{#if item.description}} {{item.description}} {{else}} No description provided {{/if}}
+    <li><h2>{{#if item.description}} {{item.description}} {{else}} No description provided {{/if}}</h2>
     </li>
+    <br>
+    <li>Id: {{item.id}}</li>
     <li>
         <button type="submit">X</button>
     </li>
