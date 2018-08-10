@@ -30,7 +30,7 @@ const onDeleteItem = (event) => {
 
 const onUpdateItem = function (event) {
     event.preventDefault()
-    console.log('running onUpdateItem')
+    // console.log('running onUpdateItem')
     const data = getFormFields(event.target)
     const item = data.item
     if (item.id.length !== 0) {
