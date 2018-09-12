@@ -9,7 +9,7 @@ I am looking forward to building something I would want to use, and as I move be
 
 ## Technologies Used
 
-This project uses HTML, CSS, Sass, Handlebars, Javascript, jQuery, and AJAX, and interacts with an API I built using Ruby on Rails and Postgresql (you can find the back end repo [here],(https://github.com/RiverMagnetic/first-rails-api-project), and [this](https://api-list-project.herokuapp.com/) will take you to the back end's live URL). 
+This project uses HTML, CSS, Sass, Handlebars, Javascript, jQuery, and AJAX, and interacts with an API I built using Ruby on Rails and Postgresql (you can find the back end repo [here](https://github.com/RiverMagnetic/first-rails-api-project), and [this](https://api-list-project.herokuapp.com/) will take you to the back end's live URL). 
 
 ## Planning
 
