@@ -9,17 +9,17 @@ I am looking forward to building something I would want to use, and as I move be
 
 ## Technologies Used
 
-This project uses HTML, CSS, Sass, Handlebars, Javascript, jQuery, and AJAX, and interacts with an API I built using Ruby on Rails and Postgresql (you can find the back end repo here: https://github.com/RiverMagnetic/first-rails-api-project and this is the back end's live URL: https://api-list-project.herokuapp.com/). 
+This project uses HTML, CSS, Sass, Handlebars, Javascript, jQuery, and AJAX, and interacts with an API I built using Ruby on Rails and Postgresql (you can find the back end repo [here],(https://github.com/RiverMagnetic/first-rails-api-project), and [this](https://api-list-project.herokuapp.com/) will take you to the back end's live URL). 
 
 ## Planning
 
 I decided to go with something simple for my first full-stack project, in order to balance trying to get this done in under a week with my other commitments. Luckily, simplcity doesn't have to mean boring, and can actually be a fun starting place from which to continue exploring and building!
 
 
-I began by creating a schedule, and then writing user stories that matched the project requirements and my ideas for a first iteration. You can see both of these on the Trello board I made for this project: https://trello.com/b/sqkzgniO/list-project
+I began by creating a schedule, and then writing user stories that matched the project requirements and my ideas for a first iteration. You can see both of these on the [Trello board I made for this project](https://trello.com/b/sqkzgniO/list-project).
 
 
-I created wireframes, which will need to be updated as the project grows. You can see my original wireframes here: https://github.com/RiverMagnetic/first-full-stack-project-client/blob/master/list-wireframe.jpg
+I created wireframes, which will need to be updated as the project grows. You can see my original wireframes [here](https://github.com/RiverMagnetic/first-full-stack-project-client/blob/master/list-wireframe.jpg).
 
 
 ## Development Process and Problem Solving
